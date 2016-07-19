@@ -1,0 +1,271 @@
+[
+    {
+        "EmpID": 51609969,
+        "EmpName": "Manish Singh",
+        "Designation": "UI Developer",
+        "DOJ": "5 May 2016",
+        "Email": "manish_sin@hcl.com",
+        "AssignationStatus": "non billable",
+        "AssignedTo": "UXD",
+        "skillset": "Developer",
+        "RM": "Deepak Madan",
+        "Phone": "9887445152",
+        "Image": "http://us.123rf.com/450wm/djvstock/djvstock1508/djvstock150806855/44096519-web-developer-design-vector-illustration-eps-10.jpg?ver=6",
+        "Skills": {
+            "1": "HTML",
+            "2": "CSS",
+            "3": "Javascript",
+            "4": "Bootstrap"
+        },
+        "AssignationCycle": {
+            "AT&T": {
+                "StartDate": "1 June 2016",
+                "EndDate": "15 July 2016",
+                "Billable": true
+            },
+            "WU": {
+                "StartDate": "31 July 2016",
+                "EndDate": "25 September 2016",
+                "Billable": true
+            },
+            "GE": {
+                "StartDate": "1 October 2016",
+                "EndDate": "15 December 2016",
+                "Billable": true
+            },
+            "LEGO": {
+                "StartDate": "16 January 2017",
+                "EndDate": "30 May 2017",
+                "Billable": true
+            }
+        },
+        "Bench": {
+            "1": {
+                "StartDate": "16 July 2016",
+                "EndDate": "30 July 2016"
+            },
+            "2": {
+                "StartDate": "26 September 2016",
+                "EndDate": "30 September 2016"
+            },
+            "3": {
+                "StartDate": "16 December 2016",
+                "EndDate": "15 January 2017"
+            }
+        }
+    },
+    {
+        "EmpID": 51618564,
+        "EmpName": "Abhijeet Nath",
+        "Designation": "Lead Engineer",
+        "DOJ": "30 June 2016",
+        "Email": "Abhijeet@hcl.com",
+        "AssignationStatus": "non billable",
+        "AssignedTo": "UXD",
+        "skillset": "Designer",
+        "RM": "Chander Prakash",
+        "Phone": "9886145152",
+        "Image": "http://cdn.vietdesigner.net/data/images/designer.png",
+        "Skills": {
+            "1": "Illustrator",
+            "2": "Photoshop",
+            "3": "Muse" ,
+            "4": "After Effects"
+        },
+        "AssignationCycle": {
+            "AT&T": {
+                "StartDate": "15 June 2016",
+                "EndDate": "30 July 2016",
+                "Billable": true
+            },
+            "WU": {
+                "StartDate": "31 July 2016",
+                "EndDate": "25 September 2016",
+                "Billable": true
+            },
+            "GE": {
+                "StartDate": "1 October 2016",
+                "EndDate": "16 January 2017",
+                "Billable": true
+            },
+            "LEGO": {
+                "StartDate": "16 January 2017",
+                "EndDate": "14 March 2017",
+                "Billable": true
+            }
+        },
+        "Bench": {
+            "1": {
+                "StartDate": "26 September 2016",
+                "EndDate": "30 September 2016"
+            },
+            "2": {
+                "StartDate": "16 January 2017",
+                "EndDate": "15 March 2017"
+            }
+        }
+    },
+     {
+        "EmpID": 51317808,
+        "EmpName": "Poonam Vipra",
+        "Designation": "Senior Developer",
+        "DOJ": "3 February 2011",
+        "Email": "poonam@hcl.com",
+        "AssignationStatus": "billable",
+        "AssignedTo": "Immucore",
+        "skillset": "Developer",
+        "RM": "Anoop Chauhan",
+        "Phone": "9887445152",
+        "Image": "http://comps.gograph.com/web-developer-design_gg79291550.jpg",
+        "Skills": {
+            "1": "HTML",
+            "2": "CSS",
+            "3": "Javascript",
+            "4": "Bootstrap"
+        },
+        "AssignationCycle": {
+            "AT&T": {
+                "StartDate": "15 June 2016",
+                "EndDate": "30 July 2016",
+                "Billable": true
+            },
+            "WU": {
+                "StartDate": "31 July 2016",
+                "EndDate": "25 September 2016",
+                "Billable": true
+            },
+            "GE": {
+                "StartDate": "1 October 2016",
+                "EndDate": "15 December 2016",
+                "Billable": true
+            },
+            "Immucore": {
+                "StartDate": "16 January 2017",
+                "EndDate": "30 May 2017",
+                "Billable": true
+            }
+        },
+        "Bench": {
+            "1": {
+                "StartDate": "26 September 2016",
+                "EndDate": "30 September 2016"
+            },
+
+            "2": {
+                "StartDate": "16 December 2016",
+                "EndDate": "15 January 2017"
+            },
+            "3": {
+                "StartDate": "16 January 2017",
+                "EndDate": "15 March 2017"
+            }
+        }
+    },
+     {
+        "EmpID": 51613486,
+        "EmpName": "Vartika Rastogi",
+        "Designation": "Visual Designer",
+        "DOJ": "30 June 2016",
+        "Email": "vartika@hcl.com",
+        "AssignationStatus": "billable",
+        "AssignedTo": "UXD",
+        "skillset": "Designer",
+        "RM": "Chander Prakash",
+        "Phone": "9886145152",
+        "Image": "http://comps.canstockphoto.com/can-stock-photo_csp31998799.jpg",
+        "Skills": {
+            "1": "Illustrator",
+            "2": "Photoshop",
+            "3": "Muse" ,
+            "4": "After Effects"
+        },
+        "AssignationCycle": {
+            "AT&T": {
+                "StartDate": "15 June 2016",
+                "EndDate": "30 July 2016",
+                "Billable": true
+            },
+            "WU": {
+                "StartDate": "31 July 2016",
+                "EndDate": "25 September 2016",
+                "Billable": true
+            },
+            "GE": {
+                "StartDate": "1 October 2016",
+                "EndDate": "16 January 2017",
+                "Billable": true
+            },
+            "LEGO": {
+                "StartDate": "16 January 2017",
+                "EndDate": "14 March 2017",
+                "Billable": true
+            }
+        },
+        "Bench": {
+            "1": {
+                "StartDate": "26 September 2016",
+                "EndDate": "30 September 2016"
+            },
+            "2": {
+                "StartDate": "16 January 2017",
+                "EndDate": "15 March 2017"
+            }
+        }
+    },
+    {
+        "EmpID": 51426508,
+        "EmpName": "Prakhar Gupta",
+        "Designation": "Lead Engineer",
+        "DOJ": "4 July 2016",
+        "Email": "prakhar@hcl.com",
+        "AssignationStatus": "billable",
+        "AssignedTo": "UXD",
+        "skillset": "Developer",
+        "RM": "Deepak Madan",
+        "Phone": "9887445152",
+        "Image": "http://comps.canstockphoto.com/can-stock-photo_csp29786527.jpg",
+        "Skills": {
+            "1": "HTML",
+            "2": "CSS",
+            "3": "Javascript",
+            "4": "Bootstrap"
+        },
+        "AssignationCycle": {
+            "AT&T": {
+                "StartDate": "15 June 2016",
+                "EndDate": "30 July 2016",
+                "Billable": true
+            },
+            "WU": {
+                "StartDate": "31 July 2016",
+                "EndDate": "25 September 2016",
+                "Billable": true
+            },
+            "GE": {
+                "StartDate": "1 October 2016",
+                "EndDate": "15 December 2016",
+                "Billable": true
+            },
+            "Immucore": {
+                "StartDate": "16 January 2017",
+                "EndDate": "30 May 2017",
+                "Billable": true
+            }
+        },
+        "Bench": {
+            "1": {
+                "StartDate": "26 September 2016",
+                "EndDate": "30 September 2016"
+            },
+
+            "2": {
+                "StartDate": "16 December 2016",
+                "EndDate": "15 January 2017"
+            },
+            "3": {
+                "StartDate": "16 January 2017",
+                "EndDate": "15 March 2017"
+            }
+        }
+    }
+]

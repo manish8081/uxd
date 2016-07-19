@@ -1,0 +1,83 @@
+<div class="panel-group" id="accordion" ng-init="getdata()">
+  <div class="panel panel-default" >
+    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+      <h4 class="panel-title">
+        <h4>Employee Details</h4>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body">
+          <div class="col-sm-3">
+            <img src="{{empdetail.Image}}" alt="" class="img-circle img-responsive">
+          </div>
+          <div class="col-sm-9">
+            <h2>{{empdetail.EmpName}}</h2>
+                            <p><strong>SAP ID: </strong>{{empdetail.EmpID}}</p>
+                            <p><strong>Email: </strong>{{empdetail.Email}}</p>
+                            <p><strong>Designation: </strong>{{empdetail.Designation}}</p>
+                            <p><strong>Date Of Joining: </strong>{{empdetail.DOJ}}</p>
+                            <p><strong>Phone: </strong>{{empdetail.Phone}}</p>
+                            <p><strong>Skillset: </strong>{{empdetail.skillset}}</p>
+                            <p><strong >Skills: </strong>
+                                <span class="label label-info tags" ng-repeat="s in skills" style="padding: 0.5em 0.8em 0.5em;
+    font-size: 100%;margin:2px">  {{s}}</span> 
+
+                                <!-- <span class="label label-info tags">css3</span>
+                                <span class="label label-info tags">jquery</span>
+                                <span class="label label-info tags">bootstrap3</span> -->
+                            </p>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" >
+    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+      <h4 class="panel-title">
+        <h4>Assignation Cycle</h4>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="col-sm-4">
+                      <div id="chart"></div>
+        </div>
+        <div class="col-sm-8">
+                        <h3><strong>Project Cycle</strong></h3>
+                          <table class="table table-bordered mytable" >
+                            <thead>
+                              <tr>
+                                <th>Project</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                              </tr>
+                            </thead>
+                            <tbody ng-repeat= "(x, y) in empdetail.AssignationCycle">
+                              <tr>
+                                <td>{{x}}</td>
+                                <td>{{y.StartDate}}</td>
+                                <td>{{y.EndDate}}</td>
+                              </tr>  
+                            </tbody>
+                          </table>
+
+                          <h3><strong>Project Detail in Days</strong></h3>
+                          <p>click on pie charts to see the detail</p>
+                          <table class="table table-bordered mytable" ng-show="clickk === 'yes'" style="background-color: grey;">
+                            <thead>
+                              <tr>
+                                <th>Project</th>
+                                <th>Number of Days</th>
+                              </tr>
+                            </thead>
+                            <tbody style="background-color:{{pdetail.pcolor}}">
+                              <tr>
+                                <td>{{pdetail.pname}}</td>
+                                <td>{{pdetail.days}}</td>
+                              </tr>  
+                            </tbody>
+                          </table>
+        </div>        
+      </div>
+    </div>
+  </div>
+</div>

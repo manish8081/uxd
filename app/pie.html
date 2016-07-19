@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>UXD Admin</title>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+
+</head>
+<body>
+<div id="pie_chart"> </div>
+
+
+<script>
+var width = 550;          //width
+var height = 350;        //height
+var radius = 300/ 2;   //radius of the pie-chart
+var color = d3.scale.category20b();    //builtin range of colors
+var svg = d3.select('#pie_chart')        //create the SVG element inside the <body>
+.append('svg')
+.attr('width', width) //set the width and height of our visualization
+.attr('height', height) // attributes of the <svg> tag
+.append('g')              //create a group to hold our pie chart
+.attr('transform', 'translate(' + (width / 2) +
+',' + (height / 2) + ')');//move the center of the pie chart from 0, 0 to specified value
+
+var total=0;
+
+d3.json("sample_data.json", function(error, data) {
+
+for(var a=0;a<data.length;a++){
+	total=total+parseInt(data[a].count); // simple logic to calculate total of data count value
+	console.log(total);
+}
+var pie_data=[];
+
+for( var a=0;a<data.length;a++){ // simple logic to calculate percentage data for the pie
+	pie_data[a]=(data[a].count/total)*100;
+}
+var arc = d3.svg.arc().outerRadius(radius);
+// creating arc element.
+var pie = d3.layout.pie()
+.value(function(d,i) { return pie_data[i]; })
+.sort(null);
+//Given a list of values, it will create an arc data for us
+//we must explicitly specify it to access the value of each element in our data array
+var path = svg.selectAll('path')
+.data(pie(data))
+.enter()
+.append('path')
+.attr('d', arc)
+.attr('fill', function(d, i) {
+	return data[i].color;
+});
+//set the color for each slice to be chosen, from the color defined in sample_data.json
+//this creates the actual SVG path using the associated data (pie) with the arc drawing function
+});
+</script>
+</body>
+</html>
