@@ -1,13 +1,19 @@
-<div class="panel-group" id="accordion" ng-init="getdata()">
-  <div class="panel panel-default" >
-    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+
+<div class="container-fluid" ng-init="getdata()">
+
+  
+  <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
       <h4 class="panel-title">
-        <h4>Employee Details</h4>
+        <span class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          Employee Details
+        </span>
       </h4>
     </div>
-    <div id="collapse1" class="panel-collapse collapse in">
+    <div id="collapseOne" class="panel-collapse collapse in">
       <div class="panel-body">
-          <div class="col-sm-3">
+         <div class="col-sm-3">
             <img src="{{empdetail.Image}}" alt="" class="img-circle img-responsive">
           </div>
           <div class="col-sm-9">
@@ -21,22 +27,20 @@
                             <p><strong >Skills: </strong>
                                 <span class="label label-info tags" ng-repeat="s in skills" style="padding: 0.5em 0.8em 0.5em;
     font-size: 100%;margin:2px">  {{s}}</span> 
-
-                                <!-- <span class="label label-info tags">css3</span>
-                                <span class="label label-info tags">jquery</span>
-                                <span class="label label-info tags">bootstrap3</span> -->
                             </p>
           </div>
       </div>
     </div>
   </div>
-  <div class="panel panel-default" >
-    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+  <div class="panel panel-default">
+    <div class="panel-heading">
       <h4 class="panel-title">
-        <h4>Assignation Cycle</h4>
+        <span class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          Assignation Cycle
+        </span>
       </h4>
     </div>
-    <div id="collapse2" class="panel-collapse collapse">
+    <div id="collapseTwo" class="panel-collapse collapse">
       <div class="panel-body">
         <div class="col-sm-4">
                       <div id="chart"></div>
@@ -62,7 +66,7 @@
 
                           <h3><strong>Project Detail in Days</strong></h3>
                           <p>click on pie charts to see the detail</p>
-                          <table class="table table-bordered mytable" ng-show="clickk === 'yes'" style="background-color: grey;">
+                          <table class="table table-bordered mytable" ng-show="clickk === 'yes'" style=" background-color: rgba(0,0,0,.075);">
                             <thead>
                               <tr>
                                 <th>Project</th>
@@ -76,8 +80,11 @@
                               </tr>  
                             </tbody>
                           </table>
-        </div>        
+        </div>
       </div>
     </div>
   </div>
 </div>
+  
+  
+</div> <!-- end container -->

@@ -33,9 +33,9 @@ body {
 }
 
 .mytable {
-        background-color: grey;
+    background-color: rgba(0,0,0,.075);
     text-align: center;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .mytable th {
@@ -236,4 +236,16 @@ ul.alert-dropdown {
 
 .panel-yellow > a:hover {
     color: #df8a13;
+}
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: grey;         /* adjust as needed */
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 }
